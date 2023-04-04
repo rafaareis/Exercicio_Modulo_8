@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de contatos</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header-a">
+            <div class="div-header-a">
+                <img src="./images/icone-de-contatos.png" alt="Foto do Ícone de Contato">
+                <h2>Agenda de Contatos</h2>
+            </div>
+            <div class="div-header-b">
+                <h2 id="numeros-cadastrados">Total de contatos cadastrados: 0</h2>
+            </div>
+        </header>
+        <article>
+            <form id="form-contato">
+                <input type="text" placeholder="Nome do Contato" id="nome-contato" />
+                <input type="number" placeholder="DDI" id="ddi-contato" min="1" max="99" required />
+                <input type="number" placeholder="DDD" id="ddd-contato" min="11" max="99" required />
+                <input type="text" placeholder="Digite o número de Telefone" id="numero-contato" required />
+                <button class="add-btn" type="submit">Adicionar +</button>
+            </form>    
+            <table id="tabela-contato" cellspacing="0" >
+                <thead>
+                    <tr>
+                        
+                        <th>Nome do Contato</th>
+                        <th>DDI</th>
+                        <th>DDD</th>
+                        <th>Número de Telefone</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--
+                    <tr class="linha-contato">
+                        <td class="id-contato"><b>--</b></td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    -->
+                </tbody>
+            </table>     
+        </article>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
